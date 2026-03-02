@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD Evoluído - Cadastro de Pessoas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2 class="enunciado">Cadastro de Pessoas</h2>
+
+    <div class="form-box">
+      <input type="hidden" id="id">
+      <input type="text" id="nome" placeholder="Nome (Obrigatório)">
+      <input type="email" id="email" placeholder="Email (Obrigatório)">
+      <input type="text" id="telefone" placeholder="Telefone">
+      <button onclick="Salvar()" id="btn-salvar">Salvar Registro</button>
+    </div>
+
+    <hr>
+
+    <div class="search-box">
+      <input type="text" id="buscaNome" placeholder="Buscar por nome..." oninput="carregar()">
+    </div>
+
+    <h3>Lista de Pessoas (<span id="contador">0</span>)</h3>
+    <ul id="lista"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
